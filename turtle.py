@@ -8,33 +8,37 @@ Created on Wed Sep  4 17:23:18 2024
 import turtle
 import math
 
-#turtle.forward(100)
-#turtle.right(90)
-#turtle.forward(50)
-#turtle.done()
 
+# Initial setup
+t = turtle.Turtle()
+t.speed(1)  # Set the speed of the turtle
 
-###################################
+# Draw the first line
+t.forward(100)
 
+# Turn and draw the second line
+t.right(90)
+t.forward(50)
 
-#########################################
+# Move without drawing
+t.penup()
+t.forward(50)
+t.pendown()
 
+# Set pen color, size, and fill color
+t.pencolor("orange")
+t.pensize(5)
+t.fillcolor("green")
+# Start filling the shape
+t.begin_fill()
 
-turtle.forward(100)
-turtle.right(90)
-turtle.forward(50)
-turtle.penup()
-turtle.forward(50)
-turtle.pendown()
-#turtle.pencolor("FF1144")
-turtle.pencolor("orange")
-turtle.pensize(5)
-turtle.fillcolor("green")
-turtle.begin_fill()
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.end_fill()# vi luke med den som vi har åpnet fillcolor, uten den funger det ikke fillcolor
+# Draw a triangle
+for _ in range(3):
+    t.forward(100)
+    t.right(120)
+
+# End filling the shape
+t.end_fill()
+
+# Finish
 turtle.done()
