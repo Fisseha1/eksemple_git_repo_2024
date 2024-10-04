@@ -8,15 +8,6 @@ Created on Wed Sep  4 17:23:18 2024
 import turtle
 import math
 
-
-
-
-turtle.forward(100)
-turtle.right(90)
-turtle.forward(50)
-turtle.penup()
-turtle.forward(50)
-turtle.pendown()
 #turtle.pencolor("FF1144")
 turtle.pencolor("orange")
 turtle.pensize(5)
