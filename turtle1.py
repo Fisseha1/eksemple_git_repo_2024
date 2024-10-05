@@ -13,10 +13,12 @@ turtle.pencolor("orange")
 turtle.pensize(5)
 turtle.fillcolor("green")
 turtle.begin_fill()
+
 for i in range(3):
 
     turtle.forward(130)
     turtle.right(120)
+
 
 turtle.end_fill()# vi luke med den som vi har åpnet fillcolor, uten den funger det ikke fillcolor
 turtle.done()
